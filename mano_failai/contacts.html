@@ -20,7 +20,7 @@
     <form action="http://localhost/kazkas" method="post">
         <label for="name">
             Jūsų vardas
-            <input type="text" name="vardas" id="name">
+            <input type="text" name="vardas" id="name" autofocus>
         </label>
         <br>
         <label for="email">
@@ -34,6 +34,8 @@
         </label>
         <br>
         <button type="submit">Siųsti</button>
+        <button type="submit" formaction="http://localhost/kazur">Kitur</button>
+        <button type="submit" formmethod="get">Siųsti[get]</button>
     </form>
 </main>
 <footer>
