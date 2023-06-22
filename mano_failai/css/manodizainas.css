@@ -1,0 +1,17 @@
+nav a {
+    background-color: blueviolet;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gallery img {
+    border: 1px solid red;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+aside a img {
+    border: 1px solid blue;
+}
