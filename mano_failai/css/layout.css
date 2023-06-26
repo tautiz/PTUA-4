@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    align-content: space-between;
+}
+
+main {
+    display: flex;
+}
+
+main > aside, main > section {
+    float: left;
+}
+body > header {
+    height: 75px;
+}
+body > header > * {
+    float: left;
+}
+body > header > nav {
+   float: right;
+}

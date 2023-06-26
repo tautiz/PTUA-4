@@ -1,5 +1,4 @@
 nav a {
-    background-color: blueviolet;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -8,10 +7,28 @@ nav a {
     border: 1px solid red;
 }
 
-header {
-    background-color: antiquewhite;
-}
-
 aside a img {
     border: 1px solid blue;
+}
+
+
+footer, header {
+    background-color: #494949;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    height: 50px;
+}
+
+
+/* nav > a */
+body > header > nav > * {
+    color: white;
+    padding: 0 10px;
+    border-right: 1px solid white;
+}
+body > header > nav > *:last-child {
+    border-right: none;
 }
