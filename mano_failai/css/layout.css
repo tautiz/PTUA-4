@@ -3,26 +3,26 @@ html, body {
     padding: 0;
     height: 100%;
 }
+
 body {
     display: grid;
-    align-content: space-between;
+    grid-template-areas:
+        "h h"
+        "a m"
+        "ft ft";
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 100px auto 300px;
 }
 
-main {
-    display: flex;
-}
-aside > main {
-    display: grid;
-}
-main > aside, main > section {
-    float: left;
+body > footer {
+    grid-area: ft;
 }
 body > header {
-    height: 75px;
+    grid-area: h;
 }
-body > header > * {
-    float: left;
+body > aside {
+    grid-area: a;
 }
-body > header > nav {
-   float: right;
+body > main {
+    grid-area: m;
 }
