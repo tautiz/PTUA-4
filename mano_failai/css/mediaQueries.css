@@ -1,10 +1,9 @@
-@media (max-width: 307px){
-    body {
-        font-size: 16px;
-    }
-}
-
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
 @media only screen and (max-width: 600px) {
+    /*
+     * Pasiekus Extra mazu irenginiu ekrano rezoliucija
+     * perrasome BODY tago 'grid-template-areas' taysykle
+     */
     body {
         grid-template-areas:
             "h h"
@@ -12,28 +11,44 @@
             "ft ft";
     }
 
+    /* pasliapiame aside taga */
     body > aside {
         display: none;
     }
+
+    /* Pasliapiame .desktop klase turincius elementus */
     .desktop {
         display: none;
     }
+
+    /* Atvaizduojame .mobile klase turincius elementus */
     .mobile {
         display: block;
     }
+
+    /* Pasliapiame .burger klase turincius elementus */
     .mobile .meniu {
         display: none;
     }
-     .burger:hover .meniu {
-        display: block;
-     }
 
-     .burger .meniu {
-         background-color: deeppink;
-     }
+    /*
+     * Atvaizduojame .burger klase turincius elementus, kai
+     * uzvedama pele ant elemento su .burger klase
+     */
+    .burger:hover .meniu {
+        display: block;
+    }
+
+    /*
+     * nustatomas .meniu klases elementu stilius
+     */
+    .burger .meniu {
+        background-color: deeppink;
+    }
 }
 
-@media only screen and (min-width: 600px) {
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
     body {
         grid-template-areas:
             "h h"
@@ -43,7 +58,8 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
     body {
         grid-template-areas:
             "h h"
