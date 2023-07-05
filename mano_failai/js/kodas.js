@@ -51,3 +51,31 @@ switch (typeof vieta) {
 }
 
 console.log(sportininkas + ' laimejo ' + medalis);
+
+
+
+// Naudodamiesi switch parašykite kodą kuris tikrintų ar a yra lygus 2 + 2.
+// Susikurkite pradžiai let a = 2 + 2;
+//
+// Pabandykite du variantus su break ir be break,
+// t.y. parašykite bent 3 skirtingus case ir default,
+// o case turėtų būti per mažas, lygus 4, per didelis ir default
+// kad nei vienas iš tų variantų. Pasižiūrėkite kuom skiriasi jūsų
+// console.log kai naudojate break ir nenaudojate break kiekvienoje case situacijoje.
+
+let a = 2 + 2;
+
+switch (a) {
+    case 3:
+        console.log('a reiksme yra mazesne uz 4');
+        break;
+    case 4:
+        console.log('a reiksme yra lygi 4');
+        break;
+    case 5:
+        console.log('a reiksme daugiau uz 4');
+        break;
+    default:
+        console.log('a reiksme yra nezinoma');
+        break;
+}
