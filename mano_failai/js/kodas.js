@@ -79,3 +79,51 @@ switch (a) {
         console.log('a reiksme yra nezinoma');
         break;
 }
+
+let nerykiuotasMasyvas = [9, 4, 6, 5, 8, 0, 7, 2, 3, 1];
+let rykiuotasMasyvas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let stringuMasyvas = ['a', 'b', 'nulis', 'vienas', 'c', 'Vardas', 'adresas'];
+let misrusMasyvas = [5, 'b', '0', 1, 'c', 777, {"vardas":"Jonas"}];
+
+let asmuo = misrusMasyvas[6];
+console.log(asmuo);
+console.log(asmuo.vardas);
+
+// Spausdiname nerykiuota masyva
+for (let i = 0; i < nerykiuotasMasyvas.length; i++) {
+    let elementas = nerykiuotasMasyvas[i];
+    console.log(elementas);
+}
+
+// Kai nereikia indekso numerio ciklo proceso metu
+for( let elementas of nerykiuotasMasyvas) {
+    console.log(elementas);
+}
+
+
+let fruits = ["Apple", "Orange", "Plum"];
+
+console.log( fruits[0] ); // Apple
+console.log( fruits[1] ); // Orange
+console.log( fruits[2] ); // Plum
+
+fruits[3] = 'Pear'; // dabar["Apple", "Orange", "Plum", "Pear"]
+
+// spausdinti( fruits[0] ); //  -- Apple --
+// spausdinti( fruits[1] ); //  -- Orange --
+// spausdinti( fruits[2] ); //  -- Pear --
+
+spausdintiMasyva(fruits);
+spausdintiMasyva(nerykiuotasMasyvas);
+spausdintiMasyva(rykiuotasMasyvas);
+
+function spausdinti(duomenys) {
+    console.log('--[ ' + duomenys + ' ]--');
+}
+
+function spausdintiMasyva(masyvas) {
+    console.log('Masyvo ilgis: ' + masyvas.length);
+    for(let elementas of masyvas) {
+        spausdinti(elementas);
+    }
+}
