@@ -127,3 +127,6 @@ function spausdintiMasyva(masyvas) {
         spausdinti(elementas);
     }
 }
+
+console.log(misrusMasyvas[6].vardas); // Jonas
+console.log(misrusMasyvas[6]['vardas']); // Jonas
