@@ -172,4 +172,17 @@ let atsakymas1 = func1(5, 8, 1); // 14
 let atsakymas2 = func2(4, 5, 6); // 15
 let atsakymas3 = func3(7, 9); // 16
 
+// Generuojamas atsitiktinis skaicius nuo 0 iki 1 neimtinai
+let atsitiktinisSkaicius = Math.random();
+
+// atsitiktinis skaicius dauginamas iš 10
+atsitiktinisSkaicius *= 10;
+
+// Suapvalinsiu atsitiktini skaiciu iki sveiko skaiciaus
+atsitiktinisSkaicius = Math.floor(atsitiktinisSkaicius);
+
+// ir t.t.
+
+console.log(atsitiktinisSkaicius);
+
 });
