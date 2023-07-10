@@ -27,6 +27,6 @@ const sarasoElementai = document.querySelectorAll("#elementas li");
 
 for (let i = 0; i < sarasoElementai.length; i++) {
     let elementas = sarasoElementai[i];
-    ????
-    elementas.innerHTML =  ??????  ;
+    let atsitiktinisSkaicius = Math.floor(Math.random() * 100);
+    elementas.innerHTML =  'Atsitiktinis skaicius: ' + atsitiktinisSkaicius;
 }
