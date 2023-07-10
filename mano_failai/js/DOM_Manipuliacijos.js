@@ -1,7 +1,32 @@
-const manoVardas = "<h1>Vardenis</h1><span>Mano vardas yra Vardenis</span>";
+const vrd = "Tautvydas Dulskis";
 
 // Pasirinkti elementa
 const manoVardasDOM = document.getElementById("manoVardas");
 
 // Pakeisti elemento turini
-manoVardasDOM.innerHTML = manoVardas;
+manoVardasDOM.innerHTML = vrd;
+
+
+
+
+// Modifikuojam ASIDE nuorodu turini
+// Pasirinkti elementa
+const soninesNuorodos = document.querySelectorAll("aside > main > a");
+
+for (let i = 0; i < soninesNuorodos.length; i++) {
+    let nuoroda = soninesNuorodos[i];
+    nuoroda.innerHTML = vrd;
+}
+
+
+
+
+
+
+const sarasoElementai = document.querySelectorAll("#elementas li");
+
+for (let i = 0; i < sarasoElementai.length; i++) {
+    let elementas = sarasoElementai[i];
+    ????
+    elementas.innerHTML =  ??????  ;
+}
