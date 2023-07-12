@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     const meniuSarasas = [
         {
             pavadinimas: 'HOME',
@@ -28,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     for (let meniuElementoDuomenys of meniuSarasas) {
         let naujasMeniuElementas = '<a href="' + meniuElementoDuomenys.nuoroda +
-            '" class="' + meniuElementoDuomenys.klases + '">' + meniuElementoDuomenys.pavadinimas + '</a>';
+            '" class="' + meniuElementoDuomenys.klases + '">' +
+            meniuElementoDuomenys.pavadinimas + '</a>';
         // REZULTATAS: <a href="index.html" class="meniu_item">Pagrindinis</a>
         meniuHTMLas += naujasMeniuElementas;
     }
