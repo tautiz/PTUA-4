@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/meniu.js" defer></script>
+
 </head>
 <body>
 
 <header>
-    <h1>Puslapio pavadinimas</h1>
-    <nav>
-        <a href="index.html">Pagrindinis</a>
-        <a href="about.html">Apie</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contacts.html">Kontaktai</a>
+    <h1>Puslapio pavadinimas - Portfolio</h1>
+    <!--    Meniu juosta pritaikyta Desktop tipo irenginiams-->
+    <nav class="desktop">
+        <div class="meniu"></div>
+    </nav>
+    <!--    Meniu juosta pritaikyta Mobile tipo irenginiams-->
+    <nav class="mobile">
+        <div class="burger">
+            [=]
+            <div class="meniu"></div>
+        </div>
     </nav>
 </header>
 <main>
