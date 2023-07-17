@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function gautiDuomenisIsServerio() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('/gallery.tautvydas')
             .then(response => response.json())
             .then(data => {
                 for (let galleryElementData of data) {
