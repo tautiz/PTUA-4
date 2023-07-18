@@ -8,7 +8,7 @@
 
 
 $(() => {
-    $("button.continue").click(()=>{
+    $("button.continue").click(function () {
         $(this).html("Next Step...");
     });
 });
